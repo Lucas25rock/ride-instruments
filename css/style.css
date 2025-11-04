@@ -199,10 +199,8 @@ aside article{
         display: flex;
         flex-direction: row;
         gap: 2rem;
-    }    
-}
-@media only screen and (max-width:600px){
-    nav{
+    }
+        nav{
         gap: 2rem;
     }
     .header-logo{
@@ -212,13 +210,13 @@ aside article{
     section{
         width: 100%;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .search-filters{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 1rem;
-    }
+    }  
 }
 footer{
     border-top: 1px solid black;
