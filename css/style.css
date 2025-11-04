@@ -141,6 +141,9 @@ aside{
     nav{
         position: static;
     }
+    .header-logo{
+        width: 50%;
+    }
     .links-responsive{
         display: block;
     }
