@@ -143,7 +143,15 @@ aside article{
     }
     .header-logo{
         justify-content: flex-start;
-        font-size: 7px;
+    }
+    .header-logo h1{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .header-logo img{
+        width: 20px;
+        height: 20px;
     }
     .links-responsive{
         display: block;
@@ -154,7 +162,9 @@ aside article{
     }
     nav form{
         display: flex;
-        margin-right: 30px;
+    }
+    input[type="search"]{
+        width:80%;
     }
     .links-responsive summary::marker {
         content: ""; 
@@ -188,7 +198,7 @@ aside article{
         margin-top: 1rem;
     }
     .banner img{
-        width: 200px;
+        width: 100px;
     }
     main{
         flex-wrap: wrap;
@@ -196,7 +206,7 @@ aside article{
     section{
         width: 100%;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         align-items: center;
         justify-items: start;
     }
