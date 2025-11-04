@@ -35,6 +35,7 @@ nav img{
 }
 main{
     margin-top: 1rem;
+    padding-inline: 1rem;
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -54,6 +55,7 @@ section{
     grid-auto-rows: 1fr 1fr 1fr;
     justify-items: center;
     justify-content: space-between;
+    gap: 2rem;
 }
 .product-card{
     display: flex;
@@ -62,6 +64,7 @@ section{
     height: 300px;
     background-color: white;
     border-radius: 20px;
+    justify-content: center;
 }
 .product-card img{
     height: 100%;
@@ -72,11 +75,13 @@ section{
     display: flex;
     flex-direction: column;
     width: auto;
+    height: auto;
     position: absolute;
     background: rgba(255, 255, 255, .3);
     backdrop-filter: blur(5px);
     z-index: 10;
     border-radius: 20px;
+    text-align: center;
     align-items: center;
 }
 .product-info h1{
@@ -105,8 +110,8 @@ aside{
 }
 .search-filters{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 35px;
 }
 .links-responsive{
@@ -116,34 +121,32 @@ aside{
     section{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-    .search-filters{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }   
+    } 
 }
 @media only screen and (max-width:1200px){
     section{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
-    .search-filters{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }  
 }
 @media (min-width: 300px) and (max-width: 720px){
     nav{
         position: static;
     }
     .header-logo{
-        width: 50%;
-    }
-    .header-logo h1{
-        font-size: 5px;
+        justify-content: flex-start;
+        font-size: 10px;
     }
     .links-responsive{
         display: block;
+    }
+    .links-responsive img{
+        width: 25px;
+        height: 25px;
+    }
+    nav form{
+        display: flex;
+        margin-right: 30px;
     }
     .links-responsive summary::marker {
         content: ""; 
@@ -173,6 +176,12 @@ aside{
     .links{
         display: none;
     }
+    .banner{
+        margin-top: 1rem;
+    }
+    .banner img{
+        width: 200px;
+    }
     main{
         flex-wrap: wrap;
     }
@@ -184,7 +193,14 @@ aside{
         justify-items: start;
     }
     aside{
+        margin-top: 1rem;
         width: 100%;
+    }
+    .sale{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
     }
 }
 footer{
