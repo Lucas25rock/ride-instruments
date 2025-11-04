@@ -39,8 +39,10 @@ main{
     display: flex;
     text-align: center;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 .banner{
+    margin-top: 7rem;
     display: flex;
     justify-content: center;
 }
@@ -108,6 +110,9 @@ aside{
     align-items: center;
     padding: 1rem;
 }
+aside article{
+    margin-top: 1rem;
+}
 .search-filters{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -130,12 +135,15 @@ aside{
     }
 }
 @media (min-width: 300px) and (max-width: 720px){
+    body{
+        background-color: rgb(129, 119, 45);
+    }
     nav{
         position: static;
     }
     .header-logo{
         justify-content: flex-start;
-        font-size: 10px;
+        font-size: 7px;
     }
     .links-responsive{
         display: block;
