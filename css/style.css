@@ -142,7 +142,7 @@ aside article{
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }  
 }
-@media only screen and (max-width:900px){
+@media only screen and (max-width:720px){
     nav form{
         display: flex;
     }
@@ -201,7 +201,7 @@ aside article{
         gap: 2rem;
     }    
 }
-@media only screen and (max-width:710px){
+@media only screen and (max-width:600px){
     nav{
         gap: 2rem;
     }
