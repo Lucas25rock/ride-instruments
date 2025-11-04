@@ -37,12 +37,11 @@ main{
     margin-top: 1rem;
     display: flex;
     text-align: center;
-    padding: 1rem;
+    justify-content: space-between;
 }
 .banner{
     display: flex;
     justify-content: center;
-    gap: 10rem;
 }
 .banner img{
     display: flex;
@@ -59,7 +58,7 @@ section{
 .product-card{
     display: flex;
     align-items: flex-end;
-    width: 200px;
+    width: auto;
     height: 300px;
     background-color: white;
     border-radius: 20px;
@@ -72,7 +71,7 @@ section{
 .product-info{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: auto;
     position: absolute;
     background: rgba(255, 255, 255, .3);
     backdrop-filter: blur(5px);
@@ -115,12 +114,8 @@ aside{
 }
 @media only screen and (max-width:1500px){
     section{
-        width: 80%;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-    aside{
-        width: 20%;
     }
     .search-filters{
         grid-template-columns: 1fr 1fr;
@@ -143,6 +138,9 @@ aside{
     }
     .header-logo{
         width: 50%;
+    }
+    .header-logo h1{
+        font-size: 5px;
     }
     .links-responsive{
         display: block;
@@ -175,15 +173,15 @@ aside{
     .links{
         display: none;
     }
-    nav{
-        display: none;
-    }
     main{
         flex-wrap: wrap;
     }
     section{
         width: 100%;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: start;
     }
     aside{
         width: 100%;
