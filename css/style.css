@@ -126,7 +126,11 @@ aside article{
     section{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    } 
+    }
+    .search-filters{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 }
 @media only screen and (max-width:1200px){
     section{
@@ -137,6 +141,12 @@ aside article{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 1rem;
+    }
+}
+@media only screen and (max-width:1000px){
+    .search-filters{
+        gap: 0px;
+        padding: 0;
     }
 }
 @media (min-width: 300px) and (max-width: 720px){
