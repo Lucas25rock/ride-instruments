@@ -133,6 +133,11 @@ aside article{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
+    .search-filters{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
 }
 @media (min-width: 300px) and (max-width: 720px){
     body{
